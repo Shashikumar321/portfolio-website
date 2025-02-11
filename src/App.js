@@ -6,6 +6,7 @@ import Hobbies from "./components/Hobbies";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import BackToTopButton from "./components/BackToTopButton";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Projects />
       <Hobbies />
       <Contact />
+      <BackToTopButton />
     </div>
   );
 }
