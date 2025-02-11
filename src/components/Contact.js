@@ -126,7 +126,7 @@ const Contact = () => {
               <div>
                 <button
                   type="submit"
-                  className="mt-2 p-4 px-7 bg-crimson text-white font-sans rounded-md"
+                  className="mt-2 p-2 px-5 bg-crimson text-white font-sans rounded-md border-2 border-transparent hover:bg-white hover:text-crimson hover:border-crimson transition duration-300 ease-in-out"
                 >
                   Send Message
                 </button>

@@ -39,13 +39,22 @@ const Header = () => {
       style={{ backgroundColor: isNavVisible ? "black" : bgColor }}
     >
       <div className="flex justify-between">
-        <div className="font-bold font-sans text-2xl md:pt-3 md:text-4xl text-white">
+        <div className="font-bold font-sans text-2xl md:pt-3 md:text-4xl text-white cursor-pointer">
           {!isNavVisible && (
             <>
-              <span>portfo</span>
-              <span className={bgColor === "transparent" ? "text-crimson" : ""}>
-                lio.
-              </span>
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                onClick={handleLinkClick}
+              >
+                <span>portfo</span>
+                <span
+                  className={bgColor === "transparent" ? "text-crimson" : ""}
+                >
+                  lio.
+                </span>{" "}
+              </Link>
             </>
           )}
         </div>

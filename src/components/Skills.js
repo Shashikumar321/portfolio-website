@@ -11,6 +11,8 @@ const Skills = () => {
     { name: "CI/CD, Jenkins, Docker, AWS", rating: 60 },
     { name: "Git, RestAPI, Postman, TestSigma", rating: 70 },
     { name: "NodeJS", rating: 50 },
+    { name: "NextJS", rating: 10 },
+
   ];
 
   return (

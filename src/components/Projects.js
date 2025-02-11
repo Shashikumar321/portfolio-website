@@ -1,4 +1,94 @@
+import ProjectComp from "./ProjectComp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAddressCard,
+  faPeoplePulling,
+  faTv,
+  faUtensils,
+} from "@fortawesome/free-solid-svg-icons";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+
 const Projects = () => {
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const projectData = [
+    {
+      title: "Food Ordering App",
+      description:
+        "A webapp created using ReactJS, Tailwindcs to order food from nearby restaurants.",
+      git_href: "https://github.com/Shashikumar321/namaste-react",
+      url_href: "",
+      icon: <FontAwesomeIcon icon={faUtensils} />,
+    },
+    {
+      title: "Netflix-GPT",
+      description:
+        "An application where you can get movie details and search for movies.Integrated using Gemini AI API's.",
+      git_href: "https://github.com/Shashikumar321/Netflix-GPT/tree/main/netflix-gpt",
+      url_href: "https://netflix-gpt-db024.web.app",
+      icon: <FontAwesomeIcon icon={faTv} />,
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "A website which has all the details about me. Written using Javascript, React and TailwindCss",
+      git_href: "https://github.com/Shashikumar321/portfolio-website",
+      url_href: "",
+      icon: <FontAwesomeIcon icon={faAddressCard} />,
+    },
+    {
+      title: "YouTube",
+      description: "A webapp for YouTube",
+      git_href: "",
+      url_href: "",
+      icon: <FontAwesomeIcon icon={faYoutube} />,
+    },
+    {
+      title: "Tinder",
+      description:
+        "A webapp created using ReactJS, Tailwindcs to order food from nearby restaurants.",
+      git_href: "",
+      url_href: "",
+      icon: <FontAwesomeIcon icon={faPeoplePulling} />,
+    },
+  ];
+
   return (
     <div
       id="projects"
@@ -11,6 +101,14 @@ const Projects = () => {
         {" "}
         <span className="text-white"> ⎯ </span> what I have done{" "}
         <span className="text-white"> ⎯ </span>{" "}
+      </div>
+
+      <div id="body" className="">
+        <Slider {...settings}>
+          {projectData.map((data) => (
+            <ProjectComp projectData={data} />
+          ))}
+        </Slider>
       </div>
     </div>
   );

@@ -59,7 +59,7 @@ const About = () => {
             appealing web applications.
           </div>
           <div className="flex justify-center items-center md:justify-start">
-              <a className="mt-6 p-4 px-7 bg-crimson text-white font-sans rounded-md" href={resume} target="_blank">Download CV</a>
+              <a className="mt-6 p-4 px-7 bg-crimson hover:bg-white hover:text-crimson text-white font-sans rounded-md border-2 border-transparent hover:border-crimson transition duration-300 ease-in-out" href={resume} target="_blank">Download CV</a>
           </div>
         </div>
       </div>
