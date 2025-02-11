@@ -71,14 +71,14 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       description:
-        "A comprehensive portfolio website to showcase my skills, projects, and professional experience, highlighting my expertise and accomplishments",
+        "A comprehensive portfolio website to showcase my skills, projects, experience and accomplishments",
       git_href: "https://github.com/Shashikumar321/portfolio-website",
       url_href: "",
       icon: <FontAwesomeIcon icon={faAddressCard} />,
     },
     {
       title: "YouTube",
-      description: "a YouTube clone leveraging React, incorporating features like video playback. The platform provides a seamless, user-friendly interface. -----Under progress------",
+      description: "a YouTube clone leveraging React, incorporating features like video playback. -----Under progress------",
       git_href: "",
       url_href: "",
       icon: <FontAwesomeIcon icon={faYoutube} />,
