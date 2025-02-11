@@ -6,29 +6,8 @@ import gardening_img from "../assets/Garden_dp.jpeg";
 
 import Hobby from "./Hobby";
 import Slider from "react-slick";
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
-
+import SampleNextArrow from "./SampleNextArrow";
+import SamplePrevArrow from "./SamplePrevArrow";
 
 const Hobbies = () => {
 
@@ -120,7 +99,7 @@ const Hobbies = () => {
       <Slider {...settings}>
           {
             hobbiesData.map((hobby) => (
-              <Hobby hobbyData={hobby} />
+              <Hobby key={hobby.title} hobbyData={hobby} />
             ))
           }
         </Slider>

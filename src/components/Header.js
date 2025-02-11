@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import {
+  faBars,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);
@@ -39,7 +44,7 @@ const Header = () => {
       style={{ backgroundColor: isNavVisible ? "black" : bgColor }}
     >
       <div className="flex justify-between">
-        <div className="font-bold font-sans text-2xl md:pt-3 md:text-4xl text-white cursor-pointer">
+        <div className="font-bold font-sans text-3xl md:pt-3 md:text-4xl text-white cursor-pointer">
           {!isNavVisible && (
             <>
               <Link
@@ -61,7 +66,7 @@ const Header = () => {
 
         <div className="flex-wrap font-bold text-3xl text-white inline-block md:hidden">
           <button onClick={handleNavBarClick}>
-            {isNavVisible ? "x" : "="}
+            {isNavVisible ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
           </button>
         </div>
 

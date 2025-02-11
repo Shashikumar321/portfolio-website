@@ -1,12 +1,19 @@
 import myImage from "../assets/background_image.jpg";
+import myImageMobile from "../assets/background_image_mobile.jpg";
+
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
     <div id="home" className="relative">
       <div className="">
+      <img
+          className="h-screen w-screen object-right md:object-cover md:hidden"
+          src={myImageMobile}
+          alt="background_image"
+        />
         <img
-          className="h-screen w-screen object-right md:object-cover"
+          className="hidden md:inline-block h-screen w-screen object-right md:object-cover"
           src={myImage}
           alt="background_image"
         />

@@ -6,7 +6,7 @@ const Skills = () => {
     { name: "Angular", rating: 80 },
     { name: "React", rating: 70 },
     { name: "TypeScript", rating: 80 },
-    { name: "HTML, CSS", rating: 90 },
+    { name: "HTML, CSS, TailwindCss", rating: 90 },
     { name: "Jasime Karma, Jest, Cypress", rating: 70 },
     { name: "CI/CD, Jenkins, Docker, AWS", rating: 60 },
     { name: "Git, RestAPI, Postman, TestSigma", rating: 70 },

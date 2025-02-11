@@ -10,6 +10,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import SampleNextArrow from "./SampleNextArrow";
+import SamplePrevArrow from "./SamplePrevArrow";
 
 const Projects = () => {
   var settings = {
@@ -19,6 +21,8 @@ const Projects = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -51,7 +55,7 @@ const Projects = () => {
     {
       title: "Food Ordering App",
       description:
-        "A webapp created using ReactJS, Tailwindcs to order food from nearby restaurants.",
+        "A food ordering application created using ReactJS, Tailwindcss to order food from nearby restaurants",
       git_href: "https://github.com/Shashikumar321/namaste-react",
       url_href: "",
       icon: <FontAwesomeIcon icon={faUtensils} />,
@@ -59,7 +63,7 @@ const Projects = () => {
     {
       title: "Netflix-GPT",
       description:
-        "An application where you can get movie details and search for movies.Integrated using Gemini AI API's.",
+        "AI-driven platform that curates and personalizes streaming recommendations using Gemini AI API's",
       git_href: "https://github.com/Shashikumar321/Netflix-GPT/tree/main/netflix-gpt",
       url_href: "https://netflix-gpt-db024.web.app",
       icon: <FontAwesomeIcon icon={faTv} />,
@@ -67,14 +71,14 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       description:
-        "A website which has all the details about me. Written using Javascript, React and TailwindCss",
+        "A comprehensive portfolio website to showcase my skills, projects, and professional experience, highlighting my expertise and accomplishments",
       git_href: "https://github.com/Shashikumar321/portfolio-website",
       url_href: "",
       icon: <FontAwesomeIcon icon={faAddressCard} />,
     },
     {
       title: "YouTube",
-      description: "A webapp for YouTube",
+      description: "a YouTube clone leveraging React, incorporating features like video playback. The platform provides a seamless, user-friendly interface. -----Under progress------",
       git_href: "",
       url_href: "",
       icon: <FontAwesomeIcon icon={faYoutube} />,
@@ -82,7 +86,7 @@ const Projects = () => {
     {
       title: "Tinder",
       description:
-        "A webapp created using ReactJS, Tailwindcs to order food from nearby restaurants.",
+        "Tinder clone with React. -----Under progress------",
       git_href: "",
       url_href: "",
       icon: <FontAwesomeIcon icon={faPeoplePulling} />,
@@ -106,7 +110,7 @@ const Projects = () => {
       <div id="body" className="">
         <Slider {...settings}>
           {projectData.map((data) => (
-            <ProjectComp projectData={data} />
+            <ProjectComp key={data.title} projectData={data} />
           ))}
         </Slider>
       </div>
