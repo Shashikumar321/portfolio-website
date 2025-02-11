@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.5d0dbd78.css",
+    "main.js": "/portfolio-website/static/js/main.86e3a137.js",
+    "static/media/about_image.jpeg": "/portfolio-website/static/media/about_image.063b9211008a3a2982d9.jpeg",
+    "static/media/Garden_dp.jpeg": "/portfolio-website/static/media/Garden_dp.d58dfa06ccafd19120bb.jpeg",
+    "static/media/Photo_dp.jpeg": "/portfolio-website/static/media/Photo_dp.0da8c4054f0df31168d3.jpeg",
+    "static/media/Yoga_dp.jpeg": "/portfolio-website/static/media/Yoga_dp.76eafea56c5256680d79.jpeg",
+    "static/media/Shashikumar_Resume.pdf": "/portfolio-website/static/media/Shashikumar_Resume.fef2bfac80ff6d40f454.pdf",
+    "static/media/background_image.jpg": "/portfolio-website/static/media/background_image.ea6b079a199f6055b529.jpg",
+    "static/media/Art_dp.jpeg": "/portfolio-website/static/media/Art_dp.b70345e2dcb7885ec162.jpeg",
+    "static/media/Book_dp.jpeg": "/portfolio-website/static/media/Book_dp.45344ed9ae3ba805cd97.jpeg",
+    "static/media/slick.svg": "/portfolio-website/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/portfolio-website/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/portfolio-website/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/portfolio-website/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/portfolio-website/index.html",
+    "main.5d0dbd78.css.map": "/portfolio-website/static/css/main.5d0dbd78.css.map",
+    "main.86e3a137.js.map": "/portfolio-website/static/js/main.86e3a137.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d0dbd78.css",
+    "static/js/main.86e3a137.js"
+  ]
+}
