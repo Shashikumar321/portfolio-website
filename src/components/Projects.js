@@ -78,9 +78,9 @@ const Projects = () => {
     },
     {
       title: "YouTube",
-      description: "a YouTube clone leveraging React, incorporating features like video playback. -----Under progress------",
-      git_href: "",
-      url_href: "",
+      description: "a YouTube clone leveraging React, incorporating features like video playback",
+      git_href: "https://github.com/Shashikumar321/my-youtube",
+      url_href: "https://my-39459.web.app/",
       icon: <FontAwesomeIcon icon={faYoutube} />,
     },
     {
