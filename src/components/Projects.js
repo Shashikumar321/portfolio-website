@@ -86,9 +86,9 @@ const Projects = () => {
     {
       title: "Tinder",
       description:
-        "Tinder clone with React. -----Under progress------",
-      git_href: "",
-      url_href: "",
+        "A FullStack web app built by me using node.js, mongoDB, Express, React",
+      git_href: "https://github.com/Shashikumar321/devTinder",
+      url_href: "http://51.21.169.189/",
       icon: <FontAwesomeIcon icon={faPeoplePulling} />,
     },
   ];
